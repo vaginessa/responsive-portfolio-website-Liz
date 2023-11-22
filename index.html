@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
       <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="">
+      <link rel="stylesheet" href="assets/css/swiper-bundle2.min.css">
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
@@ -21,19 +21,271 @@
    <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
-         
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               <img src="assets/img/logo.svg" alt="image">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link">About</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#service" class="nav__link">Service</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#course" class="nav__link">Course</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#contact" class="nav__link">Contact</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-apps-2-fill"></i>
+            </div>
+         </nav>
       </header>
 
       <!--==================== MAIN ====================-->
       <main class="main">
          <!--==================== HOME ====================-->
-         <section class="home section">
-            
+         <section class="home section" id="home">
+            <div class="home__container container">
+               <div class="home__data">
+                  <h2 class="home__subtitle">NIKE</h2>
+
+                  <h1 class="home__title">
+                     LUPINEK <br>
+                     FLYKNIT <br>
+                     ACG
+                  </h1>
+
+                  <p class="home__description">
+                     Designed to withstand the rigors of adverse 
+                     conditions, the Nike ACC Flyknit Lupinek combines 
+                     flyknit, Flywire and a water-resistant Defender 
+                     Repellent system in the upper.
+                  </p>
+
+                  <a href="#" class="home__button">BUY NOW</a>
+               </div>
+
+               <div class="home__images">
+                  <div class="home__swiper swiper">
+                     <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/1.jpg" alt="image" class="home__shoe">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/2.jpg" alt="image" class="home__shoe">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/3.jpg" alt="image" class="home__shoe">
+                        </article>
+                     </div>
+                  </div>
+
+                  <!-- Pagination -->
+                  <div class="swiper-pagination"></div>
+               </div>
+
+               <div class="home__social">
+                  <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                     <i class="ri-facebook-circle-fill"></i>
+                  </a>
+
+                  <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                     <i class="ri-instagram-fill"></i>
+                  </a>
+
+                  <a href="https://www.youtube.com/" target="_blank" class="home__social-link">
+                     <i class="ri-youtube-fill"></i>
+                  </a>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <h2 class="section__title-1">
+                  Nosotros
+               </h2>
+
+               <div class="about__perfil">
+                  <div class="about__image">
+                     <img src="assets/img/about-perfil.jpg" alt="image" class="about__img">
+
+                     <div class="about__shadow"></div>
+
+                     <div class="about__box"></div>
+                  </div>
+               </div>
+
+               <div class="about__info">
+                  <p class="about__description">
+                     Nuestro equipo realiza <b>un seguimiento detallado</b> de los procesos cognitivos y emocionales de cada alumno. <b> Apostamos a la constante comunicación</b>favoreciendo la comprensión entre padres, docentes y alumnos. La familia juega un rol fundamental para acompañar el objetivo en común de cuidar el rendimiento y el bienestar del niño.
+                  </p>
+
+                  <ul class="about__list">
+                     <li class="about__item">
+                        <b>Estimulamos al niño desde la primera infancia</b> para formar ciudadanos responsables y socialmente comprometidos, a través de propuestas motivadoras y desafiantes.
+                     </li>
+                  </ul>
+
+                  <div class="about__buttons">
+                     <a href="#contact" class="button">
+                        <i class="ri-send-plane-line"></i> Contáctanos
+                     </a>
+
+                     <a href="" target="_blank" class="button__ghost">
+                        <i class="ri-whatsapp-line"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
          </section>
 
          <!--==================== SERVICES ====================-->
-         <section class="services section">
-            
+         <section class="services section" id="service">
+            <h2 class="section__title">
+               The Services <br> 
+               I Offer
+            </h2>
+
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <i class="ri-code-s-slash-line services__icon"></i>
+                  <h2 class="services__title">Web Developer</h2>
+                  <p class="services__description">
+                     Beautiful and elegant designs with 
+                     interfaces that are intuitive, efficient and 
+                     pleasant to use for the user.
+                  </p>
+
+                  <button class="services__button button">Know More</button>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close"></i>
+
+                        <h2 class="services__modal-title">Web Developer</h2>
+
+                        <ul class="services__modal-list">
+                           <li class="services__modal-item">
+                              Create professional and quality websites at the client's request.
+                           </li>
+
+                           <li class="services__modal-item">
+                              I do web design in prototypes.
+                           </li>
+
+                           <li class="services__modal-item">
+                              I position your website with advanced SEO.
+                           </li>
+                           
+                           <li class="services__modal-item">
+                              I solve performance problems on web pages.
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-pen-nib-line services__icon"></i>
+                  <h2 class="services__title">Web Designer</h2>
+                  <p class="services__description">
+                     Beautiful and elegant designs with 
+                     interfaces that are intuitive, efficient and 
+                     pleasant to use for the user.
+                  </p>
+
+                  <button class="services__button button">Know More</button>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close"></i>
+
+                        <h2 class="services__modal-title">Web Designer</h2>
+
+                        <ul class="services__modal-list">
+                           <li class="services__modal-item">
+                              Create professional and quality websites at the client's request.
+                           </li>
+
+                           <li class="services__modal-item">
+                              I do web design in prototypes.
+                           </li>
+
+                           <li class="services__modal-item">
+                              I position your website with advanced SEO.
+                           </li>
+                           
+                           <li class="services__modal-item">
+                              I solve performance problems on web pages.
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-layout-2-line services__icon"></i>
+                  <h2 class="services__title">Interfaces UI/UX</h2>
+                  <p class="services__description">
+                     Beautiful and elegant designs with 
+                     interfaces that are intuitive, efficient and 
+                     pleasant to use for the user.
+                  </p>
+
+                  <button class="services__button button">Know More</button>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close"></i>
+
+                        <h2 class="services__modal-title">Interfaces UI/UX</h2>
+
+                        <ul class="services__modal-list">
+                           <li class="services__modal-item">
+                              Create professional and quality websites at the client's request.
+                           </li>
+
+                           <li class="services__modal-item">
+                              I do web design in prototypes.
+                           </li>
+
+                           <li class="services__modal-item">
+                              I position your website with advanced SEO.
+                           </li>
+                           
+                           <li class="services__modal-item">
+                              I solve performance problems on web pages.
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+            </div>
          </section>
 
          <!--==================== WORK ====================-->
@@ -58,15 +310,18 @@
       </footer>
 
       <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-s-line"></i>
+      </a>
 
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
 
-      <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
-
       <!--=============== INDEX JS ===============-->
       <script src="assets/js/index.js"></script>
+
    </body>
 </html>
