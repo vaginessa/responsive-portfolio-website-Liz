@@ -358,14 +358,39 @@
             </div>
          </section>
 
-         <!--==================== TESTIMONIAL ====================-->
-         <section class="testimonial section">
-            
-         </section>
-
          <!--==================== CONTACT ====================-->
          <section class="contact section">
-            
+            <h2 class="section__title">
+               Let's Talk <br>
+               About Your Project 
+            </h2>
+
+            <div class="contact__page container grid">
+               <form action="" class="contact__form" id="contact-form">
+                  <div class="contact__group grid">
+                     <div class="contact__box">
+                        <input type="text" name="user_name" id="name" required placeholder="Tú nombre" class="contact__input">
+                        <label for="" class="contact__label">Nombre</label>
+                     </div>
+
+                     <div class="contact__box">
+                        <input type="email" name="user_email" id="email" required placeholder="Tú email" class="contact__input">
+                        <label for="" class="contact__label">Email</label>
+                     </div>
+
+                     <div class="contact__box contact__area">
+                        <textarea name="user_message" id="message" required placeholder="Escribe tú mensaje" class="contact__input"></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                     </div>
+   
+                     <p class="contact__message" id="contact-message"></p>
+   
+                     <button type="submit" class="contact__send button">
+                        Enviar mensaje
+                     </button>
+                  </div>
+               </form>
+            </div>
          </section>
       </main>
 
