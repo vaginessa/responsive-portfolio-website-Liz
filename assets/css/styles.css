@@ -409,7 +409,7 @@ img {
 .home__button{
   display: inline-block;
   background-color: var(--white-color);
-  box-shadow: 0 8px 32px hsla(0, 0%, 0%, .1);
+  box-shadow: 0 8px 32px hsla(0, 0%, 0%, .60);
   padding: 1rem 3rem;
   border-radius: 4rem;
   font-weight: var(--font-bold);
@@ -417,7 +417,7 @@ img {
 }
 
 .home__button:hover{
-  box-shadow: 0 8px 32px hsla(0, 0%, 0%, .15);
+  box-shadow: 0 8px 32px hsla(0, 0%, 0%, .80);
 }
 
 .home__social{
@@ -612,7 +612,6 @@ img {
 
 .services__icon{
   display: inline-block;
-  font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 
@@ -666,6 +665,12 @@ img {
   margin-bottom: 2.5rem;
 }
 
+.services__modal-subtitle{
+  margin-bottom: 1rem;
+  text-align: left;
+  color: var(--black-color);
+}
+
 .services__modal-list{
   margin-left: 1rem;
 }
@@ -674,6 +679,10 @@ img {
   text-align: initial;
   list-style: square;
   margin-bottom: 1rem;
+}
+
+.services__modal-item b{
+  color: var(--black-color);
 }
 
 .services__modal-item::marker{
@@ -1022,6 +1031,9 @@ img {
   .nav__list{
     flex-direction: row;
     column-gap: 4rem;
+  }
+  .nav__logo img{
+    width: 4.5rem;
   }
 
   .home__container{

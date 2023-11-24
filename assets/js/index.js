@@ -1,4 +1,5 @@
 /*=============== SERVICES MODAL ===============*/
+
 const modal = document.querySelectorAll('.services__modal'),
       modalButton = document.querySelectorAll('.services__button'),
       modalClose = document.querySelectorAll('.services__modal-close')
@@ -20,3 +21,5 @@ modalClose.forEach((modalClose) => {
         })
     })
 })
+
+

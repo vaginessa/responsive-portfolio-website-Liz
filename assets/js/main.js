@@ -92,6 +92,7 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp)
 
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin:'top',
