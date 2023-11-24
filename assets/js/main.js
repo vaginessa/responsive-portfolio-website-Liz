@@ -92,4 +92,17 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== DARK LIGHT THEME ===============*/ 
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin:'top',
+    distance:'60px',
+    duration: 2500,
+    delay: 400
+
+})
+
+sr.reveal(`.home__data, .home__social, .contact__page, .footer__container`)
+sr.reveal(`.home__images`, {origin:'bottom'})
+sr.reveal(`.about__info, .skills__data`, {origin:'left'})
+sr.reveal(`.about__image, .skills_content`, {origin:'right'})
+sr.reveal(`.services__card, .projects__card, .work__card`, {interval:100})

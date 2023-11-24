@@ -141,7 +141,7 @@ img {
 ==========*/
 /*=============== REUSABLE CSS CLASSES ===============*/
 
-/* .grid {
+.grid {
   display: grid;
   gap: 1.5rem;
 }
@@ -157,7 +157,7 @@ img {
 
 .main {
   overflow: hidden;
-} */
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -742,6 +742,10 @@ img {
   padding-bottom: 4rem;
 }
 
+.contact__button{
+  justify-self: center;
+}
+
 .contact__page{
   padding-block: 1rem 4rem;
 }
@@ -812,7 +816,69 @@ img {
 
 
 /*=============== FOOTER ===============*/
+.footer{
+  background-color: var(--black-color);
+}
 
+.footer__container{
+  padding-block: 4rem 2rem;
+  text-align: center;
+  row-gap: 5rem;
+}
+
+.footer__content{
+  row-gap: 2rem;
+}
+
+.footer__content a,
+.footer__copy{
+  color: var(--white-color);
+}
+
+.footer__logo{
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  justify-self: center;
+}
+
+.footer__links,
+.footer__social{
+  display: flex;
+  justify-content: center;
+}
+
+.footer__links{
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer__link{
+  font-weight: var(--font-semi-bold);
+}
+
+.footer__logo:hover,
+.footer__link:hover{
+  text-decoration: underline;
+}
+
+.footer__social{
+  column-gap: 1rem;
+}
+
+.footer__social-link{
+  font-size: 1.5rem;
+  transition: transform .4s;
+}
+
+.footer__social-link:hover{
+  transform: translateY(-.25rem);
+}
+
+.footer__copy{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 2rem;
+}
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
@@ -920,6 +986,25 @@ img {
   .work__container{
     grid-template-columns: repeat(2, 350px);
   }
+
+  .contact__page{
+    grid-template-columns: 670px;
+    justify-content: center;
+  }
+  .contact__group{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+  .contact__area{
+    height: 18rem;
+  }
+  .contact__message{
+    bottom: 5rem;
+  }
+  .contact__send{
+    justify-self: center;
+    margin-top: 1.5rem;
+  }
 }
 
 /* For large devices */
@@ -952,6 +1037,24 @@ img {
     align-content: center;
     top: 0;
     bottom: 0;
+  }
+
+  .footer__container{
+    row-gap: 6rem;
+    padding-block: 3.5rem;
+  }
+  .footer__content{
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+  }
+  .footer__logo{
+    font-size: var(--h2-font-size);
+  }
+  .footer__links{
+    column-gap: 3rem;
+  }
+  .footer__social{
+    column-gap: 1.5rem;
   }
 }
 
