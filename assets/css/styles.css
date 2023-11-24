@@ -397,7 +397,7 @@ img {
 }
 
 .home__title{
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -938,7 +938,7 @@ img {
   }
 
   .home__title{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .home__circle{
     width: 220px;
@@ -988,6 +988,9 @@ img {
 }
 
 @media screen and (min-width: 768px){
+  .home__title{
+    font-size: 3rem;
+  }
   .services__container{
     grid-template-columns: repeat(2, 320px);
   }
